@@ -27,10 +27,17 @@ for (let i=3; i<6; i++){
 
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
+// answer: had to change index initialization i=2 
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
+for (i=2; i<=11; i+=2){
+  console.log (i);
+}
+
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a countdown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
+
+
 
 
 // 2. For of loops  
@@ -39,7 +46,9 @@ let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
 console.log('Some stars:');
-
+for(stars of stars){
+  console.log('star =', stars);
+}
 
 // 3. While loops  
 console.log('---- 3. While loop ----');
@@ -47,8 +56,21 @@ console.log('---- 3. While loop ----');
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
 
+
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
 
+let index = 0;
+while(index <6){
+  console.log(index);
+  index ++;
+}
+
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+
+index = 10;
+while(index >=5){
+  console.log(index);
+  index -=1;
+}
